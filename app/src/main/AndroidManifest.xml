@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stmik.ayuprima.ayuprima">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+         The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="com.stmik.ayuprima.ayuprima.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.stmik.ayuprima.ayuprima.SPS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.stmik.ayuprima.ayuprima.MainActivity" />
+        <activity
+            android:name="com.stmik.ayuprima.ayuprima.ActivityHospital"
+            android:label="RUMAH SAKIT" />
+        <activity android:name="com.stmik.ayuprima.ayuprima.detail.DetailHospital" />
+        <activity
+            android:name="com.stmik.ayuprima.ayuprima.ActivityApotik"
+            android:label="APOTEK" />
+        <activity
+            android:name="com.stmik.ayuprima.ayuprima.ActivityKlinik"
+            android:label="KLINIK" />
+        <activity
+            android:name="com.stmik.ayuprima.ayuprima.ActivityInformasi"
+            android:label="BERITA" />
+        <activity
+            android:name="com.stmik.ayuprima.ayuprima.ActivityAbout"
+            android:label="ABOUT" />
+        <activity android:name="com.stmik.ayuprima.ayuprima.detail.DetailBerita" />
+        <activity android:name="com.stmik.ayuprima.ayuprima.detail.DetailApotik"></activity>
+    </application>
+
+</manifest>

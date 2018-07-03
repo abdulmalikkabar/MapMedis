@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl"
+    android:layout_height="match_parent"
+    tools:context="com.stmik.ayuprima.ayuprima.ActivityHospital">
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                />
+
+            <ListView
+                android:layout_below="@+id/toolbar"
+                android:id="@+id/listnews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/list_divider"
+                android:dividerHeight="2dp"
+                android:listSelector="@drawable/list_row_selector" />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>

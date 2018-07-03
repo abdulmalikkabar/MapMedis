@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MapMedis</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+    <string name="app">Aplikasi MEDIS MAP Merupakan Aplikasi yang dapat membantu anda menenukan letak Rumah Sakit,Klinik dan Apotik terdekat, menggunakan sistem GPS dari ponsel dibantu Google Maps.</string>
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="search">Search</string>
+    <string name="type_name">Name</string>
+
+
+</resources>
